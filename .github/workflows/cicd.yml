@@ -22,8 +22,8 @@ jobs:
     - uses: actions/checkout@2
 
     - name: Use Node ${{ env.NODE_VERSION }}
-    uses: actions/setup-node@v1
-    with:
+      uses: actions/setup-node@v1
+      with:
       node-version: ${{ env.NODE_VERSION }}
 
     - name: Build project
