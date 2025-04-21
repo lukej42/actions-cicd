@@ -53,7 +53,7 @@ env:
         zip -qq -r ./deploymenttemplates/armtemplates.zip ./armTemplate
 
     - name: Upload ARM Temp Artifact
-      continue-on-error: false:
+      continue-on-error: false
       uses: actions/upload-artifact@v2
       with:
         name: deploymenttemplates
